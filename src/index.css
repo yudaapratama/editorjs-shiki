@@ -1,0 +1,69 @@
+.ce-editorjs-x-shiki {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ce-editorjs-x-shiki__code {
+  position: relative;
+  float: left;
+  min-width: 100%;
+  font-size: medium;
+}
+
+.ce-editorjs-x-shiki__selector {
+  display: flex;
+  gap: .25rem;
+  align-items: center;
+  z-index: 12;
+  border-bottom-style: solid;
+  border-color: #9ca3af0d;
+  padding: .5rem;
+}
+
+.ce-editorjs-x-shiki__selector select {
+  border: none;
+  outline: none;
+}
+
+.ce-editorjs-x-shiki__span {
+  position: relative;
+  z-index: 0;
+  padding: 20px;
+  margin: 0;
+  text-wrap: wrap;
+  white-space: pre;
+}
+
+.ce-editorjs-x-shiki__textarea {
+  white-space: pre;
+  overflow: hidden;
+  text-wrap: wrap;
+  background-color: transparent;
+  position: absolute;
+  padding: 20px;
+  inset: 0 0 0 0;
+  color: transparent;
+  z-index: 0;
+  font-size: 13px;
+  caret-color: white;
+  resize: none;
+  border: none;
+}
+
+.ce-editorjs-x-shiki__lang {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+	height: 14px;
+	line-height: 14px;
+	font-size: 10px;
+	color: #999;
+	background-color: #dcdfe6;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	right: 0;
+	bottom: 0;
+	border-bottom-right-radius: 6px;
+	border-top-left-radius: 6px;
+}
