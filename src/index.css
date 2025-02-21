@@ -25,6 +25,7 @@
 .ce-editorjs-x-shiki__selector-language
 , .ce-editorjs-x-shiki__selector-theme {
   font-size: 13px;
+  font-family: inherit;
 }
 
 .ce-editorjs-x-shiki__selector select {
@@ -60,9 +61,8 @@
 
 .ce-editorjs-x-shiki__lang {
   position: absolute;
-	height: 14px;
 	line-height: 14px;
-	font-size: 13px;
+	font-size: 10px;
 	color: #999;
 	background-color: #dcdfe6;
 	padding: 6px;
