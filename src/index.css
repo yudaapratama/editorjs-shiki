@@ -2,6 +2,7 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  overflow-x: auto;
 }
 
 .ce-editorjs-x-shiki__code {
@@ -21,6 +22,11 @@
   padding: .5rem;
 }
 
+.ce-editorjs-x-shiki__selector-language
+, .ce-editorjs-x-shiki__selector-theme {
+  font-size: 13px;
+}
+
 .ce-editorjs-x-shiki__selector select {
   border: none;
   outline: none;
@@ -31,7 +37,7 @@
   z-index: 0;
   padding: 20px;
   margin: 0;
-  text-wrap: wrap;
+  /* overflow-x: auto; */
   white-space: pre;
   font-size: 13px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
@@ -40,7 +46,6 @@
 .ce-editorjs-x-shiki__textarea {
   white-space: pre;
   overflow: hidden;
-  text-wrap: wrap;
   background-color: transparent;
   position: absolute;
   padding: 20px;
@@ -55,18 +60,17 @@
 }
 
 .ce-editorjs-x-shiki__lang {
-  font-family: 'Courier New', Courier, monospace;
   position: absolute;
 	height: 14px;
 	line-height: 14px;
-	font-size: 10px;
+	font-size: 13px;
 	color: #999;
 	background-color: #dcdfe6;
 	padding: 6px;
 	padding-left: 10px;
 	padding-right: 10px;
+	top: 0;
 	right: 0;
-	bottom: 0;
-	border-bottom-right-radius: 6px;
-	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
