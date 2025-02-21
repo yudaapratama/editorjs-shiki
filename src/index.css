@@ -2,14 +2,14 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  overflow-x: auto;
+  margin: 10px 0;
 }
 
 .ce-editorjs-x-shiki__code {
   position: relative;
   float: left;
   min-width: 100%;
-  font-size: medium;
+  overflow-x: auto;
 }
 
 .ce-editorjs-x-shiki__selector {
@@ -37,7 +37,6 @@
   z-index: 0;
   padding: 20px;
   margin: 0;
-  /* overflow-x: auto; */
   white-space: pre;
   font-size: 13px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
