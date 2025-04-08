@@ -1,6 +1,6 @@
 {
   "name": "@nuxtizen/editorjs-shiki",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "code",
     "editor.js",
@@ -31,7 +31,8 @@
     "build": "vite build",
     "lint": "eslint",
     "lint:errors": "eslint --quiet",
-    "lint:fix": "eslint --fix"
+    "lint:fix": "eslint --fix",
+    "publish": "vite build && npm publish --access public"
   },
   "author": "Yuda Pratama <yudhaprathamaa@gmail.com>",
   "devDependencies": {

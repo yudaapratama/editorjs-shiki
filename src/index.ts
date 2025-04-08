@@ -97,11 +97,11 @@ export default class CodeTool implements BlockTool {
   /**
    * Default language for the CodeTool
    */
-  private _selectorLanguage: string = CodeTool.DEFAULT_LANGUAGE;
+  private _selectorLanguage: string = '';
   /**
    * Default theme for the CodeTool
    */
-  private _selectorTheme: string = CodeTool.DEFAULT_THEME;
+  private _selectorTheme: string = '';
   /**
    * Notify core that read-only mode is supported
    * @returns true if read-only mode is supported
@@ -133,8 +133,8 @@ export default class CodeTool implements BlockTool {
 
     this.placeholder = this.api.i18n.t(config.placeholder as string || CodeTool.DEFAULT_PLACEHOLDER);
 
-    this._selectorLanguage = config.lang || this._selectorLanguage;
-    this._selectorTheme = config.theme || this._selectorTheme;
+    this._selectorLanguage = data.lang || config.lang || CodeTool.DEFAULT_LANGUAGE
+    this._selectorTheme = data.theme || config.theme || CodeTool.DEFAULT_THEME
 
     this.CSS = {
       baseClass: this.api.styles.block,
@@ -153,8 +153,8 @@ export default class CodeTool implements BlockTool {
 
     this.data = {
       code: data.code ?? '',
-      lang: data.lang ?? this._selectorLanguage,
-      theme: data.theme ?? this._selectorTheme,
+      lang: this._selectorLanguage,
+      theme: this._selectorTheme,
     };
 
     this.nodes.holder = this.drawView()
